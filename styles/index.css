@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(245, 242, 238);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-wrap {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__phone-num, .header__contact, .header__txt-btn, .header__nav, .header__contact-nav, .header__contact-info-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  background-color: rgb(68, 104, 104);
+  padding: 20px 0;
+}
+.header__search-box {
+  padding: 0 30px;
+}
+.header__search {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 0 15px;
+}
+.header__img {
+  max-width: 130px;
+}
+.header__contact-info-wrap {
+  gap: 100px;
+}
+.header__contact-nav {
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  text-align: center;
+}
+.header__nav {
+  flex-direction: row;
+  gap: 80px;
+}
+.header__txt-btn {
+  flex-direction: row;
+}
+.header__contact {
+  gap: 45px;
+}
+.header__phone-num {
+  gap: 10px;
+  align-items: center;
+}
+.header__vodafone {
+  max-width: 30px;
+}
+.header__kyivstar {
+  max-width: 30px;
+}

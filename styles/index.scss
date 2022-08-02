@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(245, 242, 238);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px + 15px * 2;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.page-wrap {
+    min-height: 100vh;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: rgb(68, 104, 104);
+    padding: 20px 0;
+
+    &__search-box {
+        padding: 0 30px;
+    }
+
+    &__search {
+        width: 100%;
+        height: 30px;
+        border-radius: 15px;
+        border: 1px solid black;
+        padding: 0 15px;
+    }
+
+    &__img {
+        max-width: 130px;
+    }
+
+    &__contact-info-wrap {
+        @extend %flex;
+        gap: 100px;
+    }
+
+    &__contact-nav {
+        @extend %flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__nav {
+        @extend %flex;
+        flex-direction: row;
+        gap: 80px;
+    }
+
+    &__txt-btn {
+        @extend %flex;
+        flex-direction: row;
+    }
+
+    &__contact {
+        @extend %flex;
+        gap: 45px;
+    }
+
+    &__phone-num {
+        @extend %flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__vodafone {
+        max-width: 30px;
+    }
+
+    &__kyivstar {
+        max-width: 30px;
+    }
+}
