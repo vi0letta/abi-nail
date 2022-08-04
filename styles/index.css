@@ -1,7 +1,3 @@
-body {
-  background-color: rgb(245, 242, 238);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -24,23 +20,24 @@ a {
   color: black;
 }
 
-.header__phone-num, .header__contact, .header__txt-btn, .header__nav, .header__contact-nav, .header__contact-info-wrap {
+.header__product-nav, .header__phone-num, .header__contact, .header__txt-btn, .header__nav, .header__contact-nav, .header__contact-info-wrap {
   display: flex;
   flex-wrap: wrap;
+}
+
+body {
+  background-color: rgb(243, 230, 212);
 }
 
 .header {
   background-color: rgb(68, 104, 104);
   padding: 20px 0;
 }
-.header__search-box {
-  padding: 0 30px;
-}
 .header__search {
   width: 100%;
   height: 30px;
   border-radius: 15px;
-  border: 1px solid black;
+  border: none;
   padding: 0 15px;
 }
 .header__img {
@@ -48,22 +45,42 @@ a {
 }
 .header__contact-info-wrap {
   gap: 100px;
+  justify-content: center;
 }
 .header__contact-nav {
   flex-direction: column;
   gap: 30px;
   justify-content: center;
   text-align: center;
+  margin-top: 40px;
 }
 .header__nav {
   flex-direction: row;
-  gap: 80px;
+  gap: 90px;
+}
+.header__link {
+  border-radius: 10px;
+  padding: 5px;
+}
+.header__link:hover {
+  background-color: rgb(243, 230, 212);
 }
 .header__txt-btn {
   flex-direction: row;
+  gap: 5px;
+}
+.header__btn {
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(68, 104, 104);
+}
+.header__btn:hover {
+  background-color: rgb(243, 230, 212);
 }
 .header__contact {
-  gap: 45px;
+  gap: 40px;
+  padding-left: 20px;
 }
 .header__phone-num {
   gap: 10px;
@@ -74,4 +91,19 @@ a {
 }
 .header__kyivstar {
   max-width: 30px;
+}
+.header__product-nav {
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 25px 0 15px;
+  border-top: 2px solid rgb(243, 230, 212);
+  margin-top: 30px;
+}
+.header__nav-link {
+  font-size: 20px;
+  font-weight: 400;
+}
+.header__nav-link:hover {
+  color: rgb(243, 230, 212);
+  text-decoration: underline;
 }

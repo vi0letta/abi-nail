@@ -1,7 +1,3 @@
-body {
-    background-color: rgb(245, 242, 238);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -25,24 +21,36 @@ a {
     color: black;
 }
 
+@mixin font-properties 
+($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
 %flex {
     display: flex;
     flex-wrap: wrap;
 }
 
+$basic-green: rgb(68, 104, 104);
+$ivory: rgb(243, 230, 212);
+
+
+body {
+    background-color: $ivory;
+}
+
 .header {
-    background-color: rgb(68, 104, 104);
+    background-color: $basic-green;
     padding: 20px 0;
 
-    &__search-box {
-        padding: 0 30px;
-    }
+   
 
     &__search {
         width: 100%;
         height: 30px;
         border-radius: 15px;
-        border: 1px solid black;
+        border: none;
         padding: 0 15px;
     }
 
@@ -53,6 +61,7 @@ a {
     &__contact-info-wrap {
         @extend %flex;
         gap: 100px;
+        justify-content: center;
     }
 
     &__contact-nav {
@@ -61,22 +70,45 @@ a {
         gap: 30px;
         justify-content: center;
         text-align: center;
+        margin-top: 40px;
     }
 
     &__nav {
         @extend %flex;
         flex-direction: row;
-        gap: 80px;
+        gap: 90px;
+    }
+
+    &__link {
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    &__link:hover {
+        background-color: $ivory;
     }
 
     &__txt-btn {
         @extend %flex;
         flex-direction: row;
+        gap: 5px;
+    }
+
+    &__btn {
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: $basic-green;
+    }
+
+    &__btn:hover {
+        background-color: $ivory;
     }
 
     &__contact {
         @extend %flex;
-        gap: 45px;
+        gap: 40px;
+        padding-left: 20px;
     }
 
     &__phone-num {
@@ -91,5 +123,24 @@ a {
 
     &__kyivstar {
         max-width: 30px;
+    }
+
+    &__product-nav {
+        @extend %flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 25px 0 15px;
+        border-top: 2px solid $ivory;
+        margin-top: 30px;
+
+    }
+
+    &__nav-link {
+        @include font-properties(20px, 400)
+    }
+
+    &__nav-link:hover {
+        color: $ivory;
+        text-decoration: underline;
     }
 }
