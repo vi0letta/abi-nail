@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +15,6 @@
 
 .page-wrap {
     min-height: 100vh;
-
 }
 
 a {
@@ -32,36 +33,41 @@ a {
     flex-wrap: wrap;
 }
 
-$basic-green: rgb(68, 104, 104);
-$ivory: rgb(243, 230, 212);
 
+//colors:
+
+$skin: #ecd6d8;
+$dusty-pink: #e2aeb7;
+$pink: #bd85a1;
+$purple: #927294;
+$vinous: #935e7e;
 
 body {
-    background-color: $ivory;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $skin;
 }
 
 .header {
-    background-color: $basic-green;
-    padding: 20px 0;
+    background: linear-gradient($purple, $pink);
+    padding: 0;
 
-   
-
-    &__search {
-        width: 100%;
-        height: 30px;
-        border-radius: 15px;
-        border: none;
-        padding: 0 15px;
+    &__fl {
+        display: flex;
+        align-items: center;
     }
 
     &__img {
-        max-width: 130px;
+        max-width: 110px;
     }
 
     &__contact-info-wrap {
         @extend %flex;
         gap: 100px;
-        justify-content: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        @include font-properties(20px, 700);
     }
 
     &__contact-nav {
@@ -85,7 +91,7 @@ body {
     }
 
     &__link:hover {
-        background-color: $ivory;
+        background-color: $bordo;
     }
 
     &__txt-btn {
@@ -96,19 +102,15 @@ body {
 
     &__btn {
         border: none;
-        border-radius: 10px;
         padding: 5px;
-        background-color: $basic-green;
+        background-color: transparent;
     }
 
-    &__btn:hover {
-        background-color: $ivory;
-    }
-
+    
     &__contact {
         @extend %flex;
         gap: 40px;
-        padding-left: 20px;
+        justify-content: space-between;
     }
 
     &__phone-num {
@@ -128,19 +130,85 @@ body {
     &__product-nav {
         @extend %flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 25px 0 15px;
-        border-top: 2px solid $ivory;
         margin-top: 30px;
 
     }
 
     &__nav-link {
-        @include font-properties(20px, 400)
+        @include font-properties(20px, 400);
     }
 
     &__nav-link:hover {
-        color: $ivory;
+        color: $light-gray;
         text-decoration: underline;
+    }
+
+    &__basket-img {
+        width: 70px;
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+}
+
+.main {
+    &__h1 {
+        @include font-properties(30px, 700);
+        padding: 40px 0 15px 0;
+        text-align: center;
+    }
+
+    &__txt {
+        @include font-properties(20px, 400);
+        text-indent: 2rem;
+        padding-bottom: 15px;
+    }
+
+    &__nav-card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 60px;
+        cursor: pointer;
+    }
+
+    &__link {
+        @include font-properties(20px, 400)
+    }
+}
+
+.dusty-pink {
+    background-color: $dusty-pink;
+    &:hover {
+        background-color: $skin;
+    }
+}
+
+.purple {
+    background-color: $purple;
+    &:hover {
+        background-color: $skin;
+    }
+}
+
+.pink {
+    background-color: $pink;
+    &:hover {
+        background-color: $skin;
+    }
+}
+
+.vinous {
+    background-color: $vinous;
+    &:hover {
+        background-color: $skin;
     }
 }
