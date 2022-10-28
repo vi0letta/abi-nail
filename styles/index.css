@@ -32,7 +32,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(#927294, #bd85a1);
+  background: linear-gradient(#935e7e, #e2aeb7);
   padding: 0;
 }
 .header__fl {
@@ -66,7 +66,7 @@ body {
   padding: 5px;
 }
 .header__link:hover {
-  background-color: #79585E;
+  background-color: #bd85a1;
 }
 .header__txt-btn {
   flex-direction: row;
@@ -76,6 +76,7 @@ body {
   border: none;
   padding: 5px;
   background-color: transparent;
+  cursor: pointer;
 }
 .header__contact {
   gap: 40px;
@@ -102,7 +103,7 @@ body {
   font-weight: 400;
 }
 .header__nav-link:hover {
-  color: #ABAEAE;
+  color: #ecd6d8;
   text-decoration: underline;
 }
 .header__basket-img {
@@ -123,10 +124,16 @@ body {
   text-indent: 2rem;
   padding-bottom: 15px;
 }
+.main .txt-center {
+  display: flex;
+  justify-content: center;
+}
 .main__nav-card {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 .main__card {
   display: flex;
@@ -140,12 +147,42 @@ body {
   font-size: 20px;
   font-weight: 400;
 }
+.main__h2 {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.main__text-box {
+  display: flex;
+  gap: 30px;
+}
+.main__block {
+  max-width: 550px;
+}
+.main__btn-fb {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: end;
+  padding-bottom: 40px;
+}
+.main__btn {
+  cursor: pointer;
+  color: white;
+  background-color: #1877f2;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 3px;
+  font-weight: 700;
+}
 
 .dusty-pink {
   background-color: #e2aeb7;
 }
 .dusty-pink:hover {
   background-color: #ecd6d8;
+  border: 3px solid #e2aeb7;
 }
 
 .purple {
@@ -153,6 +190,7 @@ body {
 }
 .purple:hover {
   background-color: #ecd6d8;
+  border: 3px solid #927294;
 }
 
 .pink {
@@ -160,6 +198,7 @@ body {
 }
 .pink:hover {
   background-color: #ecd6d8;
+  border: 3px solid #bd85a1;
 }
 
 .vinous {
@@ -167,4 +206,24 @@ body {
 }
 .vinous:hover {
   background-color: #ecd6d8;
+  border: 3px solid #935e7e;
+}
+
+.footer {
+  background: linear-gradient(#e2aeb7, #935e7e);
+  padding: 20px 0;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__link {
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  padding: 5px;
+}
+.footer__link:hover {
+  background-color: #bd85a1;
 }

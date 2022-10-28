@@ -48,7 +48,7 @@ body {
 }
 
 .header {
-    background: linear-gradient($purple, $pink);
+    background: linear-gradient($vinous, $dusty-pink);
     padding: 0;
 
     &__fl {
@@ -91,7 +91,7 @@ body {
     }
 
     &__link:hover {
-        background-color: $bordo;
+        background-color: $pink;
     }
 
     &__txt-btn {
@@ -104,6 +104,7 @@ body {
         border: none;
         padding: 5px;
         background-color: transparent;
+        cursor: pointer;
     }
 
     
@@ -141,7 +142,7 @@ body {
     }
 
     &__nav-link:hover {
-        color: $light-gray;
+        color: $skin;
         text-decoration: underline;
     }
 
@@ -165,10 +166,17 @@ body {
         padding-bottom: 15px;
     }
 
+    .txt-center {
+        display: flex;
+        justify-content: center;
+    }
+
     &__nav-card {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        padding-top: 20px;
+        padding-bottom: 40px;
     }
 
     &__card {
@@ -181,7 +189,40 @@ body {
     }
 
     &__link {
-        @include font-properties(20px, 400)
+        @include font-properties(20px, 400);
+    }
+
+    &__h2 {
+        @include font-properties(25px, 700);
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__text-box {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__block {
+        max-width: 550px;
+    }
+
+    &__btn-fb {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: end;
+        padding-bottom: 40px;
+    }
+
+    &__btn {
+        cursor: pointer;
+        color: white;
+        background-color: #1877f2;
+        border: none;
+        padding: 5px 8px;
+        border-radius: 3px;
+        font-weight: 700;
     }
 }
 
@@ -189,6 +230,7 @@ body {
     background-color: $dusty-pink;
     &:hover {
         background-color: $skin;
+        border: 3px solid $dusty-pink;
     }
 }
 
@@ -196,6 +238,7 @@ body {
     background-color: $purple;
     &:hover {
         background-color: $skin;
+        border: 3px solid $purple;
     }
 }
 
@@ -203,6 +246,7 @@ body {
     background-color: $pink;
     &:hover {
         background-color: $skin;
+        border: 3px solid $pink;
     }
 }
 
@@ -210,5 +254,28 @@ body {
     background-color: $vinous;
     &:hover {
         background-color: $skin;
+        border: 3px solid $vinous;
+    }
+}
+
+
+.footer {
+    background: linear-gradient($dusty-pink, $vinous);
+    padding: 20px 0;
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__link {
+        @include font-properties(20px, 400);
+        border-radius: 10px;
+        padding: 5px;
+        
+        &:hover {
+            background-color: $pink;
+        }
     }
 }
