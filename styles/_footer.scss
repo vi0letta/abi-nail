@@ -1,0 +1,17 @@
+.footer {
+    background-color: rgba(0, 0, 0, 0.877);
+    padding: 20px 0;
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__link {
+        @include font-properties(20px, 600);
+        color: white !important;
+        padding: 5px;
+        
+    }
+}
