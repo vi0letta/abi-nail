@@ -52,6 +52,9 @@ $container-space: 15px;
 
 .page-wrap {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 a {

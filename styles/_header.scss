@@ -1,52 +1,6 @@
 .header {
     padding: 0;
-
-    .bg-light {
-        background-color: #fff !important;
-    }
-
-    .logo {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .lang {
-        border: none;
-        background-color: transparent;
-        color: grey;
-        &:hover {
-            color: $pink;
-        }
-    }
-
-    .dropdown-item {
-        &:active {
-            background-color: white;
-            color: black;
-            padding: 7px 0;
-        }
-    }
-
-    .navbar-nav {
-        gap: 25px;
-        @media (max-width: 992px) {
-            gap: 0px;
-        }
-    }
-
-    .nav-item {
-        display: flex;
-        gap: 5px;
-    }
-
-    .nav-link {
-        padding: 5px;
-        color: black;
-        &:hover {
-        color: $pink;
-            text-decoration: underline;
-        }
-    }
+    background-color: #fff ;
 
     &__img {
         max-width: 100px;
@@ -69,16 +23,12 @@
         padding-top: 20px;
     }
 
-    .b-1 {
-        display: none;
-        @media (max-width: 992px) {
-            display: block;
-        }
-    }
-
-    .b-2 {
-        @media (max-width: 992px) {
-            display: none;
+    .nav-link {
+        padding: 5px;
+        color: black;
+        &:hover {
+        color: $vinous;
+            text-decoration: underline;
         }
     }
 
@@ -88,5 +38,58 @@
             border: none;
             color: transparent;
         }
+    } 
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.lang {
+    border: none;
+    background-color: transparent;
+    color: grey;
+    &:hover {
+        color: $pink;
     }
 }
+
+.dropdown-item {
+    &:active {
+        background-color: white;
+        color: black;
+        padding: 7px 0;
+    }
+}
+
+.navbar-nav {
+    gap: 25px;
+    @media (max-width: 992px) {
+        gap: 0px;
+    }
+    .dropdown-menu {
+        margin-top: 40px;
+        margin-left: -100px;
+    }
+    
+}
+
+.nav-item {
+    display: flex;
+    gap: 5px;
+}
+
+.b-1 {
+    display: none;
+    @media (max-width: 992px) {
+        display: block;
+    }
+}
+
+.b-2 {
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+

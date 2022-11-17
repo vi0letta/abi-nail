@@ -12,6 +12,8 @@
         @include font-properties(20px, 600);
         color: white !important;
         padding: 5px;
-        
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
