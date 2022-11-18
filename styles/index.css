@@ -60,7 +60,6 @@ a {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #ecd6d8;
 }
 
 .header {
@@ -116,7 +115,7 @@ body {
   color: grey;
 }
 .lang:hover {
-  color: #bd85a1;
+  color: #935e7e;
 }
 
 .dropdown-item:active {
