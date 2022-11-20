@@ -84,9 +84,42 @@ body {
     margin: 0 !important;
   }
 }
+.header__basket {
+  text-decoration: none;
+}
 .header__basket-img {
-  width: 50px;
+  width: 60px;
   padding-top: 20px;
+}
+.header__cost {
+  border-radius: 50px;
+  background-color: rgb(207, 57, 57);
+  width: 17px;
+  height: 17px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 650;
+  position: absolute;
+  right: 10px;
+  bottom: 50px;
+}
+.header__cost-mini {
+  border-radius: 50px;
+  background-color: rgb(207, 57, 57);
+  width: 17px;
+  height: 17px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 650;
+  position: absolute;
+  right: 33px;
+  bottom: 35px;
 }
 .header .nav-link {
   padding: 5px;

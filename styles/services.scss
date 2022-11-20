@@ -33,12 +33,21 @@
         flex-direction: column !important;
         width: 45%;
     }
+    @media (max-width:410px) {
+        width: 75%;
+    }
+    @media (max-width:325px) {
+        width: 100%;
+    }
 }
 
 .card-title {
     margin-bottom: 3px !important;
     @media (max-width:960px) {
         font-size: 17px;
+    }
+    @media (max-width:550px) {
+        font-size: 15px;
     }
 }
 
@@ -55,12 +64,15 @@
 .img-fluid {
     width: 100% !important;
     max-width: 200px !important;
-    border-radius: 6px 0 0 6px !important;
     @media (max-width:550px) {
         max-width: 190px !important;
     }
     @media (max-width:505px) {
-        border-radius: 6px 6px 0 0;
+        max-width: 220px !important;
+        border-radius: 6px;
+    }
+    @media (max-width:410px) {
+        max-width: 350px !important;
     }
 }
 
