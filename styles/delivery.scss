@@ -44,6 +44,28 @@
     &__img {
         max-width: 200px;
     }
+
+    &__btn-fb {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: end;
+        padding-bottom: 40px;
+        @media (max-width: 890px) {
+            padding-bottom: 30px;
+            padding-top: 10px;
+        }
+    }
+
+    &__btn {
+        cursor: pointer;
+        color: white;
+        background-color: #1877f2;
+        border: none;
+        padding: 5px 8px;
+        border-radius: 3px;
+        font-weight: 700;
+    }
 }
 
 
