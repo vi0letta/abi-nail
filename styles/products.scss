@@ -195,6 +195,39 @@
     align-items: center;
 }
 
+.btn-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.category-btn {
+    font-size: 18px;
+    padding: 3px 12px;
+    border-radius: 10px;
+    color: rgb(70, 43, 43);
+    background-color: transparent;
+    text-decoration: none;
+    
+    color: black;
+    border: 2px solid black;
+    box-shadow: 2px 2px 7px black;
+
+    &:hover {
+        color: rgb(70, 43, 43);
+        border: 2px solid $vinous;
+        box-shadow: 2px 2px 7px $vinous;
+    }
+
+    &:active {
+        color: rgb(70, 43, 43);
+        border: 2px solid $vinous;
+        box-shadow: 2px 2px 7px $vinous;
+    }
+}
+
 
 
 .brisa {
@@ -217,6 +250,7 @@
     padding-bottom: 30px;
     &__h2 {
         font-size: 26px;
+        text-align: center;
         @media (max-width: 600px ) {
             font-size: 23px;
         }
@@ -239,6 +273,38 @@
         padding-bottom: 5px;
     }
 } 
+
+.creative-polish {
+    padding-bottom: 30px;
+    &__h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    &__txt {
+        text-indent: 2rem;
+        font-size: 17px;
+    }
+}
+
+.acril {
+    padding-bottom: 30px;
+    &__h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+    &__txt {
+        text-indent: 1rem;
+        font-size: 17px;
+    }
+}
+
+.shellac {
+    &__h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+}
 
 
 @import "./footer";
