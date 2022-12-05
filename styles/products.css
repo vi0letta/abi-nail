@@ -504,6 +504,19 @@ body {
   font-size: 22px;
   text-align: center;
 }
+.shellac__txt {
+  text-indent: 1rem;
+  font-size: 17px;
+}
+
+.lotions__h2 {
+  font-size: 22px;
+  text-align: center;
+}
+.lotions__txt {
+  text-indent: 2rem;
+  font-size: 17px;
+}
 
 .footer {
   background-color: rgba(0, 0, 0, 0.877);
