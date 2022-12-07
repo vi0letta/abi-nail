@@ -518,6 +518,15 @@ body {
   font-size: 17px;
 }
 
+.creative-gel__h2 {
+  font-size: 22px;
+  text-align: center;
+}
+.creative-gel__txt {
+  text-indent: 2rem;
+  font-size: 17px;
+}
+
 .footer {
   background-color: rgba(0, 0, 0, 0.877);
   padding: 20px 0;

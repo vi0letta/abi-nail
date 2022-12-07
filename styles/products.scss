@@ -322,4 +322,15 @@
     }
 }
 
+.creative-gel {
+    &__h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+    &__txt{
+        text-indent: 2rem;
+        font-size: 17px;
+    }
+}
+
 @import "./footer";
