@@ -182,14 +182,20 @@
 }
 
 
-
-
 .form-control {
         &:active {
             box-shadow: $vinous !important;
             border: $vinous !important;
         }
 
+}
+
+.sum {
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 
