@@ -84,8 +84,8 @@ body {
 .header__cost {
   border-radius: 50px;
   background-color: rgb(207, 57, 57);
-  width: 17px;
-  height: 17px;
+  width: 19px;
+  height: 19px;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -99,8 +99,8 @@ body {
 .header__cost-mini {
   border-radius: 50px;
   background-color: rgb(207, 57, 57);
-  width: 17px;
-  height: 17px;
+  width: 19px;
+  height: 19px;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -175,6 +175,20 @@ body {
 @media (max-width: 992px) {
   .b-2 {
     display: none;
+  }
+}
+
+.products__h1 {
+  font-size: 25px;
+  text-align: center;
+}
+.products__txt {
+  text-indent: 2rem;
+  font-size: 18px;
+}
+@media (max-width: 650px) {
+  .products__txt {
+    font-size: 15px;
   }
 }
 
@@ -426,105 +440,6 @@ body {
   color: rgb(70, 43, 43);
   border: 2px solid #935e7e;
   box-shadow: 2px 2px 7px #935e7e;
-}
-
-.brisa__h1 {
-  font-size: 25px;
-  text-align: center;
-}
-.brisa__txt {
-  text-indent: 2rem;
-  font-size: 18px;
-}
-@media (max-width: 650px) {
-  .brisa__txt {
-    font-size: 15px;
-  }
-}
-
-.plexigel {
-  padding-bottom: 30px;
-}
-.plexigel__h2 {
-  font-size: 26px;
-  text-align: center;
-}
-@media (max-width: 600px) {
-  .plexigel__h2 {
-    font-size: 23px;
-  }
-}
-@media (max-width: 430px) {
-  .plexigel__h2 {
-    font-size: 19px;
-  }
-}
-.plexigel__h3 {
-  font-size: 22px;
-}
-@media (max-width: 600px) {
-  .plexigel__h3 {
-    font-size: 19px;
-  }
-}
-@media (max-width: 370px) {
-  .plexigel__h3 {
-    font-size: 17px;
-  }
-}
-.plexigel__list {
-  padding-bottom: 5px;
-}
-
-.creative-polish {
-  padding-bottom: 30px;
-}
-.creative-polish__h2 {
-  font-size: 26px;
-  text-align: center;
-}
-.creative-polish__txt {
-  text-indent: 2rem;
-  font-size: 17px;
-}
-
-.acril {
-  padding-bottom: 30px;
-}
-.acril__h2 {
-  font-size: 26px;
-  text-align: center;
-}
-.acril__txt {
-  text-indent: 1rem;
-  font-size: 17px;
-}
-
-.shellac__h2 {
-  font-size: 22px;
-  text-align: center;
-}
-.shellac__txt {
-  text-indent: 1rem;
-  font-size: 17px;
-}
-
-.lotions__h2 {
-  font-size: 22px;
-  text-align: center;
-}
-.lotions__txt {
-  text-indent: 2rem;
-  font-size: 17px;
-}
-
-.creative-gel__h2 {
-  font-size: 22px;
-  text-align: center;
-}
-.creative-gel__txt {
-  text-indent: 2rem;
-  font-size: 17px;
 }
 
 .footer {

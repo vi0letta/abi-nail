@@ -1,6 +1,23 @@
 @import "./reset";
 @import "./header";
 
+
+
+.products {
+    &__h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    &__txt {
+        text-indent: 2rem;
+        font-size: 18px;
+        @media (max-width:650px) {
+            font-size: 15px;
+        }
+    }
+}
+
 .main {
     &__h1 {
         @include font-properties(30px, 700);
@@ -225,111 +242,6 @@
         color: rgb(70, 43, 43);
         border: 2px solid $vinous;
         box-shadow: 2px 2px 7px $vinous;
-    }
-}
-
-
-
-.brisa {
-    &__h1 {
-        font-size: 25px;
-        text-align: center;
-    }
-
-    &__txt {
-        text-indent: 2rem;
-        font-size: 18px;
-        @media (max-width:650px) {
-            font-size: 15px;
-        }
-    }
-}
-
-
-.plexigel {
-    padding-bottom: 30px;
-    &__h2 {
-        font-size: 26px;
-        text-align: center;
-        @media (max-width: 600px ) {
-            font-size: 23px;
-        }
-        @media (max-width:430px) {
-            font-size: 19px;
-        }
-    }
-
-    &__h3 {
-        font-size: 22px;
-        @media (max-width: 600px) {
-            font-size: 19px;
-        }
-        @media (max-width: 370px) {
-            font-size: 17px;
-        }
-    }
-
-    &__list {
-        padding-bottom: 5px;
-    }
-} 
-
-.creative-polish {
-    padding-bottom: 30px;
-    &__h2 {
-        font-size: 26px;
-        text-align: center;
-    }
-
-    &__txt {
-        text-indent: 2rem;
-        font-size: 17px;
-    }
-}
-
-.acril {
-    padding-bottom: 30px;
-    &__h2 {
-        font-size: 26px;
-        text-align: center;
-    }
-    &__txt {
-        text-indent: 1rem;
-        font-size: 17px;
-    }
-}
-
-.shellac {
-    &__h2 {
-        font-size: 22px;
-        text-align: center;
-    }
-
-    &__txt {
-        text-indent: 1rem;
-        font-size: 17px;
-    }
-}
-
-.lotions {
-    &__h2 {
-        font-size: 22px;
-        text-align: center;
-    }
-    &__txt{
-        text-indent: 2rem;
-        font-size: 17px;
-    }
-}
-
-.creative-gel {
-    &__h2 {
-        font-size: 22px;
-        text-align: center;
-    }
-    &__txt{
-        text-indent: 2rem;
-        font-size: 17px;
     }
 }
 
