@@ -25,19 +25,9 @@
     max-width: 1054px;
   }
 }
-@media (max-width: 1024px) {
-  .container-flex {
-    max-width: 1024px;
-  }
-}
 @media (max-width: 904px) {
   .container-flex {
     max-width: 890px;
-  }
-}
-@media (max-width: 768px) {
-  .container-flex {
-    max-width: 750px;
   }
 }
 @media (max-width: 648px) {
@@ -417,6 +407,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 20px 0;
 }

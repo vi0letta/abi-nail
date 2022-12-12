@@ -31,23 +31,13 @@ $container-space: 15px;
         max-width: 1024px  + 15px * 2;
     }
 
-    @media (max-width: 1024px) {
-        max-width: 994px  + 15px * 2;
-    }
-
     @media (max-width: 904px) {
         max-width: 860px  + 15px * 2;
-    }
-
-    @media (max-width: 768px) {
-        max-width: 720px + 15px * 2;
     }
 
     @media (max-width: 648px) {
         max-width: 600px  + 15px * 2;
     }
-
-
 }
 
 .page-wrap {

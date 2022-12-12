@@ -25,19 +25,9 @@
     max-width: 1054px;
   }
 }
-@media (max-width: 1024px) {
-  .container-flex {
-    max-width: 1024px;
-  }
-}
 @media (max-width: 904px) {
   .container-flex {
     max-width: 890px;
-  }
-}
-@media (max-width: 768px) {
-  .container-flex {
-    max-width: 750px;
   }
 }
 @media (max-width: 648px) {
@@ -304,70 +294,70 @@ body {
   }
 }
 
-.card {
+.basket-card {
   display: flex;
   flex-direction: row !important;
   align-items: center !important;
+  justify-content: space-around;
+  padding: 25px 0px !important;
+  border: 1px solid rgba(128, 128, 128, 0.718);
+  border-radius: 10px;
   gap: 10px;
   padding: 10px;
   width: 100%;
 }
-
-.card-wrap {
+.basket-card__wrap {
   width: 200px !important;
 }
-
-.card-img-top {
+.basket-card__img-top {
   width: 100% !important;
 }
-
-.card-text {
+.basket-card__text {
   margin-bottom: 0;
 }
 @media (max-width: 654px) {
-  .card-text {
+  .basket-card__text {
     max-width: 180px;
   }
 }
 @media (max-width: 580px) {
-  .card-text {
+  .basket-card__text {
     font-size: 14px;
   }
 }
 @media (max-width: 370px) {
-  .card-text {
+  .basket-card__text {
     font-size: 13px;
   }
 }
-
-.card-body {
+.basket-card__body {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  max-width: 500px;
   align-items: center;
   gap: 10px;
 }
 @media (max-width: 530px) {
-  .card-body {
+  .basket-card__body {
     padding: 5px 5px !important;
   }
 }
-
-.card-title {
+.basket-card__title {
   font-size: 18px;
 }
 @media (max-width: 595px) {
-  .card-title {
+  .basket-card__title {
     font-size: 18px;
   }
 }
 @media (max-width: 580px) {
-  .card-title {
+  .basket-card__title {
     font-size: 17px;
   }
 }
 @media (max-width: 370px) {
-  .card-title {
+  .basket-card__title {
     font-size: 15px;
   }
 }
